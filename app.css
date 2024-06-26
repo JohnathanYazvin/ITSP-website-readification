@@ -1,0 +1,90 @@
+main{
+    background-color: darkgray;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(57, 30, 66);
+}
+
+.screen{
+    height: 700px;
+    width: 350px;
+    background-color: rgb(115, 230, 224);
+}
+
+.app_header{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(140,16,16,255);
+    margin-top: 70px;
+    color: black;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app_header button{
+    height: 25px;
+    width: 50px;
+    border: none;
+}
+
+.app_menu_button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.app_header hr{
+    height: 25px;
+    width: 2px;
+    border-radius: 1px;
+    border: none;
+    background-color: black;
+}
+
+.app_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.app_main img {
+    width: 140px;
+}
+
+.app_main_buttons{
+    height: 27vh;
+    border: none;
+    background-color: rgb(97, 14, 14);
+    transition: background-color 0.2s;
+    padding: 0;
+    cursor: pointer;
+}
+
+.app_main_buttons:hover{
+    background-color: rgb(27, 52, 85);
+}
+
+.home_button{
+    height: 70px;
+    width: 115.5px;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app_logo{
+    height: 50px;
+}
+
+.storyhublogo{
+    height: 30px;
+}

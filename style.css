@@ -1,0 +1,82 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: calc(100vh - 70px);
+    width: 100vw;
+    margin-top: 70px;
+    animation: slideBackground 20s infinite;
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; 
+    background-image: url(foto/abstract-wavy-background-in-purple-color-free-vector_upscaled.jpg);
+}
+
+.image-container {
+    position: relative;
+    display: inline-block; /* Adjust as needed */
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30%; /* Adjust as needed for the fade height */
+    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
+    pointer-events: none; /* Allows clicks to pass through */
+}
+/*@keyframes slideBackground {
+    0% {
+        background-image: url('assassin-s-creed-valhalla-pc-spel-ubisoft-connect-europe-cover.jpg');
+    }
+    25% {
+        background-image: url('TCM_KA_lowRez.avif');
+    }
+    50% {
+        background-image: url('assassin-s-creed-valhalla-pc-spel-ubisoft-connect-europe-cover.jpg');
+    }
+    75% {
+        background-image: url('TCM_KA_lowRez.avif');
+    }
+    100% {
+        background-image: url('assassin-s-creed-valhalla-pc-spel-ubisoft-connect-europe-cover.jpg');
+    }
+}
+
+*/
+.text_blocks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_blocks_button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: rgba(36, 37, 39, 0.2);
+    transition: background-color 0.2s;
+    font-family: Roboto;
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+}
+
+.text_blocks_button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.background-fade{
+    width: 100%;
+    top: 70px;
+    height: 50px;
+}

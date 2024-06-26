@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="appgames.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button onclick="navigateToHome()" class="home_button"><img class="logo" src="foto/itsp logo.jpg" alt=""></button>
+        <button id="burger-menu" class="burger-menu">
+            <hr>
+            <hr id="bottom-line" class="bottom-line">
+        </button>
+        <div id="menu-container" class="menu-container">
+            <button onclick="navigateToHome()" class="menu-button">Home</button>
+            <button onclick="navigateToOnsIdee()" class="menu-button">Ons Idee</button>
+            <button onclick="navigateToOverOns()" class="menu-button">Over Ons</button>
+            <button onclick="navigateToPage()" class="menu-button">De App</button>
+            <br><br>
+            <img class="twobasics_logo" src="foto/logo-wit-xpayoff-1000px.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="screen">
+            <div class="xbox_block1">
+                <div>
+                    <img class="xbox_image1" src="foto/halo_infinite_keyart_primary_square-aecb24a8f2a649e4bdec3f424373fed2.png" alt="">
+                </div>
+                <div  class="xbox_block_main">
+                    <p>De nieuwste verhalen over de Halo serie</p>
+                    <br>
+                    <button class="xbox_read_button">Lees nu</button>
+                </div>
+            </div>
+            <div class="xbox_block2">
+                <div>
+                    <img class="xbox_image1" src="foto/seaofthieves.jpg" alt="">
+                </div>
+                <div class="xbox_block_main">
+                    <p>De nieuwste verhalen over Sea of Thieves</p>
+                    <br>
+                    <br>
+                    <button class="xbox_read_button">Lees nu</button>
+                </div>
+            </div>
+            <div class="xbox_block3">
+                <div>
+                    <img class="xbox_image1" src="foto/geardofwar.png" alt="">
+                </div>
+                <div  class="xbox_block_main">
+                    <p>De nieuwste verhalen over Gears of War</p>
+                    <button class="xbox_read_button">Lees nu</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
