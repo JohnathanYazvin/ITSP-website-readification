@@ -1,0 +1,63 @@
+main{
+    animation: slideBackground 20s infinite;
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; 
+    background-image: url(foto/abstract-wavy-background-in-purple-color-free-vector_upscaled.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 70px);
+    width: 100vw;
+    margin-top: 70px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block; /* Adjust as needed */
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30%; /* Adjust as needed for the fade height */
+    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
+.home_button{
+    height: 70px;
+    width: 115.5px;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_box{
+    color: white;
+    height: 300px;
+    width: 350px;
+    text-align: center;
+    background-color: rgba(1, 1, 1, 0.55);
+    border-radius: 16px;
+    font-family: Roboto;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+p{
+    text-align: center;
+    font-size: 19px;
+}
