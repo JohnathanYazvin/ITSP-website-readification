@@ -9,7 +9,7 @@ main{
 .screen{
     height: 700px;
     width: 350px;
-    background-color: rgb(115, 230, 224);
+    background-color: rgb(102, 32, 32);
 }
 
 .app_header{
@@ -87,4 +87,16 @@ main{
 
 .storyhublogo{
     height: 30px;
+}
+
+.nbd_text{
+    color: white;
+    font-family: Roboto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; 
+    width: 300px;
+    text-align: center;
 }
